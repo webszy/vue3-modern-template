@@ -6,11 +6,10 @@ import 'virtual:uno.css'
 import { routes } from 'vue-router/auto/routes'
 import { createRouter,createWebHashHistory } from 'vue-router/auto'
 import { createPinia } from 'pinia'
-
 const router = createRouter({
     history: createWebHashHistory(),
     routes
-})
+} as any)
 const app = createApp(App)
 app.use(router)
 app.use(createPinia())
